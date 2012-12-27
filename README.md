@@ -1,4 +1,4 @@
 duckJS
 ======
 
-A Module Loader For JavaScript
+一款JavaScript模块加载器。
