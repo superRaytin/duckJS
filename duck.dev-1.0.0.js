@@ -4,17 +4,17 @@
  @ author : superRaytin
  @ contact : superRaytin@163.com
 */
-+function( window, document, undefined ){
+(function( window, document, undefined ){
 	var head = document.head || document.getElementsByTagName('head')[0],
 		// 页面路径
 		pagePath,
 		// 根路径
-		rootPath,
+        rootPath,
 		// 当前正在加载的模块
 		onLoadingModName,
 		useExecuteOnce = true;
 	
-	var rword = /[^, ]+/g;
+	var rword = /[^, ]+/g
 	
 	// 缓存加载队列
 	var QueueCache = {};
@@ -543,7 +543,7 @@
 	window.D = window.duckJS = duckJS;
 	
 	// 初始化获取模块相对路径
-	+function( script ){
+    (function( script ){
 		var lastScript = script[ script.length - 1 ],
 			jsPath = lastScript.getAttribute('src'),
 			pageUrl = document.URL.replace( /#.*/g, '' ).replace( /\\/g, '/' ),
@@ -563,5 +563,5 @@
 		// 查找预加载
 		dataMain && duckJS.use( dataMain.split(/\s*,\s*/g) );
 		
-	}( document.getElementsByTagName('script') );
-}( this, this.document, undefined );
+	})( document.getElementsByTagName('script') );
+})( this, this.document, undefined );
