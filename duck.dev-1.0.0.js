@@ -14,7 +14,7 @@
 		onLoadingModName,
 		useExecuteOnce = true;
 	
-	var rword = /[^, ]+/g
+	var rword = /[^, ]+/g;
 	
 	// 缓存加载队列
 	var QueueCache = {};
