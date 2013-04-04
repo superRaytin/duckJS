@@ -419,9 +419,9 @@
 
             if( toDepList ){
                 duckModule.each( toDepList, function( item ){
-                    name = item.name,
-                        factory = item.factory,
-                        mod = module[ name ];
+                    name = item.name;
+                    factory = item.factory;
+                    mod = module[ name ];
                     depExports = duckModule.getModExports( mod.deps );
 
                     mod.status = STATUS.COMPILING;
@@ -443,9 +443,9 @@
                 exports, mod, name, factory, depExports;
 
             if( toDepListBackItem ){
-                name = toDepListBackItem.name,
-                    factory = toDepListBackItem.factory,
-                    mod = module[ name ];
+                name = toDepListBackItem.name;
+                factory = toDepListBackItem.factory;
+                mod = module[ name ];
                 depExports = duckModule.getModExports( mod.deps );
 
                 mod.status = STATUS.COMPILING;
