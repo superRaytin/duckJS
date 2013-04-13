@@ -65,4 +65,6 @@ duckJS.use(['gallery/jquery-v1.7.2.min.js', 'path/test.js'])
 ```
 
 # 支持的浏览器 #
-理论上支持IE6+，及其他现代浏览器。
+支持IE6+，及其他现代浏览器。
+
+更多架构细节见 [duckJS架构详解](http://www.jsfor.com/qianduan/javascript/javascript-mo-kuai-jia-zai-qi-duckjs-jia-gou-xiang-jie.html)
