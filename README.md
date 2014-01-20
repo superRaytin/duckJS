@@ -1,13 +1,9 @@
-duckJS
-======
+# duckJS
+JavaScript模块加载器
 
-# duckJS是什么 #
-一款JavaScript模块加载器;
-在遵循AMD规范的基础上，作了一些更加方便的改进，支持定义匿名模块。
-这样在调用模块的时候只需关心模块的URL，而不需要知道模块名称。
+> 在遵循AMD规范的基础上，作了一些更加方便的改进，支持定义匿名模块。
 
-# 如何使用duckJS #
-轻松两步便可使用，举个栗子~
+# 如何使用
 
 ```html
 <script type="text/javascript" src="path/duck.js" />
@@ -21,7 +17,7 @@ duckJS
 </script>
 ```
 
-# define 定义模块 #
+# 定义模块
 ```html
 // test.js
 define( ['jquery'], function($){
@@ -39,7 +35,7 @@ define( ['jquery'], function($){
 define是一个全局方法，每一个参数为一个数组，表示此模块的依赖列表，也可以是一个字符串，表示只有一个依赖。
 也可以忽略第一个参数，直接定义一个无依赖的匿名模块。
 
-# use 调用模块 #
+# 调用模块
 ```html
 <script type="text/javascript">
     // 加载一个样式文件
@@ -63,8 +59,5 @@ define是一个全局方法，每一个参数为一个数组，表示此模块�
 ```html
 duckJS.use(['gallery/jquery-v1.7.2.min.js', 'path/test.js'])
 ```
-
-# 支持的浏览器 #
-支持IE6+，及其他现代浏览器。
 
 更多架构细节见 [duckJS架构详解](http://www.jsfor.com/qianduan/javascript/javascript-mo-kuai-jia-zai-qi-duckjs-jia-gou-xiang-jie.html)
